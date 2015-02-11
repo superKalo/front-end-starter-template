@@ -1,5 +1,5 @@
 $(function(){
 
-    //TODO
+    //TODO: Get shit done.
 
 });

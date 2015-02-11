@@ -3,16 +3,14 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         copy: {
             main: {
-                files: [
-                    {
-                        expand: true,
-                        flatten: true,
-                        src: ['pages/**'],
-                        dest: '_build/',
-                        filter: 'isFile',
-                    }
-                ]
-            },
+                files: [{
+                    expand: true,
+                    flatten: true,
+                    src: ['*.html'],
+                    dest: '_build/',
+                    filter: 'isFile',
+                }]
+            }
         },
         uglify: {
             development: {
@@ -107,27 +105,32 @@ module.exports = function(grunt) {
         notify: {
             html: {
                 options: {
-                    title: 'HTML files copied!',
-                    message: 'all good!'
+                    title: 'Done!',
+                    message: 'HTML files copied!'
                 }
             },
             styles: {
                 options: {
-                    title: 'Styles Compiled :)',
-                    message: 'all good!'
+                    title: 'Done!',
+                    message: 'Styles compiled!'
                 }
             },
             images: {
                 options: {
-                    title: 'Images Optimizer :)',
-                    message: 'all good!'
+                    title: 'Done!',
+                    message: 'Images optimized!'
                 }
             },
             scripts: {
                 options: {
-                    title: 'JS Compiled! :)',
-                    message: ':)'
+                    title: 'Done',
+                    message: 'JS Optimized'
                 }
+            }
+        },
+        shell: {
+            clean: {
+              command: 'rm -rf _build/*'
             }
         },
         watch: {
@@ -136,7 +139,7 @@ module.exports = function(grunt) {
                 tasks: ['sass', 'autoprefixer', 'notify:styles']
             },
             html: {
-                files: ['pages/**/*.html'],
+                files: ['*.html'],
                 tasks: ['copy', 'notify:html']
             },
             images: {
@@ -148,6 +151,11 @@ module.exports = function(grunt) {
                 tasks: ['uglify:development', 'notify:scripts']
             }
         },
+        concurrent: {
+            developmentTarget1: ['copy', 'newer:imagemin', 'sass', 'uglify:development'],
+            productionTarget1: ['copy', 'newer:imagemin', 'sass', 'uglify:production'],
+            target2: ['autoprefixer', 'notify:done'],
+        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -160,6 +168,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('default', ['copy', 'newer:imagemin', 'sass', 'autoprefixer', 'uglify:development', 'watch']);
-    grunt.registerTask('production', ['copy', 'newer:imagemin', 'sass', 'autoprefixer', 'uglify:production']);
+    grunt.registerTask('default', ['concurrent:developmentTarget1', 'concurrent:target2', 'watch']);
+    grunt.registerTask('clean', ['shell:clean']);
+    grunt.registerTask('production', ['concurrent:productionTarget1', 'concurrent:target2']);
 };
