@@ -17,8 +17,9 @@ All the productivity plugins we use run on top of NodeJS :)
 
 - Packages are defined by a manifest file **bower.json** http://bower.io/docs/creating-packages/
 - The bower configuration file is **.bowerrs** http://bower.io/docs/config
+
 Run this command in the project directory to install all libraries listed in bower.json in the **lib directory**:
-```bash
+```shell
 bower install
 ```
 
