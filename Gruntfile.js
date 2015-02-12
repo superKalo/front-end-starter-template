@@ -19,12 +19,12 @@ module.exports = function(grunt) {
                     mangle: false
                 },
                 files: {
-                    '_build/js/script.min.js': ['js/script.js']
+                    '_build/js/script.min.js': ['lib/jquery/dist/jquery.js', 'js/script.js']
                 }
             },
             production: {
                 files: {
-                    '_build/js/script.min.js': ['js/script.js']
+                    '_build/js/script.min.js': ['lib/jquery/dist/jquery.min.js', 'js/script.js']
                 }
             }
         },
@@ -141,7 +141,7 @@ module.exports = function(grunt) {
         },
         watch: {
             styles: {
-                files: ['_sass/**/*.scss'],
+                files: ['styles/**/*.scss'],
                 tasks: ['sass', 'autoprefixer', 'notify:styles']
             },
             html: {
