@@ -17,3 +17,9 @@ http://gruntjs.com/getting-started
 - Run tasks whenever watched files change: https://github.com/gruntjs/grunt-contrib-watch
 - Run shell commands as s Grunt task: https://github.com/sindresorhus/grunt-shell
 - Run grunt tasks concurrently to decrease build time: https://github.com/sindresorhus/grunt-concurrent
+
+
+##Sublime Linters:
+- >SublimeLinter is a plugin for Sublime Text 3 that provides a framework for linting code. Whatever language you code in, SublimeLinter can help you write cleaner, better, more bug-free code. http://sublimelinter.readthedocs.org/en/latest/
+-- SublimeLinter plugin for JavaScript, using jshint: https://github.com/SublimeLinter/SublimeLinter-jshint
+-- SublimeLinter plugin for Sass scss syntax, using scss-lint: https://github.com/attenzione/SublimeLinter-scss-lint
