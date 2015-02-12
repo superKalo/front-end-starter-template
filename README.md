@@ -2,7 +2,7 @@
 
 Нека да вдигнем нивото на нашия Front-end код и workflow, заедно. :)
 
-![DevLabs](https://avatars0.githubusercontent.com/u/10864739?v=3&s=400 =200x)
+![DevLabs](https://avatars0.githubusercontent.com/u/10864739?v=3&s=200) { width: 100px; }
 
 ##NodeJS
 >Node.js® is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices. http://nodejs.org
