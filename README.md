@@ -29,6 +29,10 @@ http://gruntjs.com/getting-started
 
 - **package.json** This file is used by npm to store metadata for projects published as npm modules. You will list grunt and the Grunt plugins your project needs as devDependencies in this file.
 - **Gruntfile.js**: used to configure or define tasks and load Grunt plugins.
+- Run this command in the project directory to install all project dependencies with npm:
+```shell
+npm install
+```
 
 ###Grunt Plugins:
 - Compile SASS/SCSS to CSS: https://github.com/gruntjs/grunt-contrib-sass
