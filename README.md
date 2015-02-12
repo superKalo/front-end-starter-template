@@ -32,7 +32,7 @@ http://gruntjs.com/getting-started
 
 ##Sublime Linters:
 - SublimeLinter is a plugin for Sublime Text 3 that provides a framework for linting code. Whatever language you code in, SublimeLinter can help you write cleaner, better, more bug-free code. http://sublimelinter.readthedocs.org/en/latest/
-  - SublimeLinter plugin for JavaScript, using jshint: https://github.com/SublimeLinter/SublimeLinter-jshint (**configuration file: styles/.jsintrc**)
+  - SublimeLinter plugin for JavaScript, using jshint: https://github.com/SublimeLinter/SublimeLinter-jshint (**configuration file: js/.jsintrc**)
   - SublimeLinter plugin for Sass scss syntax, using scss-lint: https://github.com/attenzione/SublimeLinter-scss-lint (**configuration file: styles/.scss-lint.yml**)
 
 ##.sublime-project Configuration File:
