@@ -15,13 +15,18 @@ All the productivity plugins we use run on top of NodeJS :)
 ##Bower
 >Web sites are made of lots of things — frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you. http://bower.io/#install-bower
 
-Packages are defined by a manifest file **bower.json** http://bower.io/docs/creating-packages/
-The bower configuration file is **.bowerrs** http://bower.io/docs/config
-
+- Packages are defined by a manifest file **bower.json** http://bower.io/docs/creating-packages/
+- The bower configuration file is **.bowerrs** http://bower.io/docs/config
+Run this command in the project directory to install all libraries listed in bower.json in the **lib directory**:
+```bash
+bower install
+```
 
 ##Grunt
 >In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it through a Gruntfile, a task runner can do most of that mundane work for you—and your team—with basically zero effort.
 http://gruntjs.com/getting-started
+
+- 
 
 ###Grunt Plugins:
 - Compile SASS/SCSS to CSS: https://github.com/gruntjs/grunt-contrib-sass
