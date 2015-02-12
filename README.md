@@ -12,8 +12,12 @@ All the productivity plugins we use run on top of NodeJS :)
 ###NPM
 >npm is a package manager for JavaScript, and is the default for Node.js. As of Node.js version 0.6.3, npm is bundled and installed automatically with the environment. npm runs through the command line and manages dependencies for an application.
 
-##Bower:
+##Bower
 >Web sites are made of lots of things — frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you. http://bower.io/#install-bower
+
+Packages are defined by a manifest file **bower.json** http://bower.io/docs/creating-packages/
+The bower configuration file is **.bowerrs** http://bower.io/docs/config
+
 
 ##Grunt
 >In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it through a Gruntfile, a task runner can do most of that mundane work for you—and your team—with basically zero effort.
