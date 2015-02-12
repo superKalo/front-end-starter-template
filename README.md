@@ -1,5 +1,7 @@
 #Hello DevLabs!
 
+Нека да вдигнем нивото на нашия Front-end код и workflow, заедно. :)
+
 ##Bower:
 >Web sites are made of lots of things — frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you. http://bower.io/#install-bower
 
@@ -18,8 +20,11 @@ http://gruntjs.com/getting-started
 - Run shell commands as s Grunt task: https://github.com/sindresorhus/grunt-shell
 - Run grunt tasks concurrently to decrease build time: https://github.com/sindresorhus/grunt-concurrent
 
-
 ##Sublime Linters:
-- > SublimeLinter is a plugin for Sublime Text 3 that provides a framework for linting code. Whatever language you code in, SublimeLinter can help you write cleaner, better, more bug-free code. http://sublimelinter.readthedocs.org/en/latest/
+- SublimeLinter is a plugin for Sublime Text 3 that provides a framework for linting code. Whatever language you code in, SublimeLinter can help you write cleaner, better, more bug-free code. http://sublimelinter.readthedocs.org/en/latest/
   - SublimeLinter plugin for JavaScript, using jshint: https://github.com/SublimeLinter/SublimeLinter-jshint
   - SublimeLinter plugin for Sass scss syntax, using scss-lint: https://github.com/attenzione/SublimeLinter-scss-lint
+
+##.sublime-project Configuration File:
+>Projects in Sublime Text are made up of two files: the sublime-project file, which contains the project definition, and the sublime-workspace file, which contains user specific data, such as the open files and the modifications to each.
+As a general rule, the sublime-project file would be checked into version control, while the sublime-workspace file would not. https://www.sublimetext.com/docs/3/projects.html
