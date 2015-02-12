@@ -1,19 +1,37 @@
-* { margin: 0; padding: 0; outline: 0; }
-a { text-decoration: none; }
+* {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+html,
+body {
+    height: 100%;
+}
 
-html, body { height: 100%; }
-
-input, textarea { appearance: none; -webkit-appearance: none; }
+input,
+textarea {
+    -webkit-appearance: none;
+    appearance: none;
+}
 
 ::selection {
-    background: $light-blue;
-    color: $white;
+    background-color: #000;
+    color: #fff;
 }
 ::-moz-selection {
-    background: $light-blue;
-    color: $white;
+    background-color: #000;
+    color: #fff;
 }
 
-.right { float: right; }
-.left { float: left; }
-.hidden { display: none; }
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+.hidden {
+    display: none;
+}

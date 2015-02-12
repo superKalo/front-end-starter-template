@@ -126,6 +126,12 @@ module.exports = function(grunt) {
                     title: 'Done',
                     message: 'JS Optimized'
                 }
+            },
+            done: {
+                options: {
+                    title: 'Done',
+                    message: ':)'
+                }
             }
         },
         shell: {
@@ -154,7 +160,7 @@ module.exports = function(grunt) {
         concurrent: {
             developmentTarget1: ['copy', 'newer:imagemin', 'sass', 'uglify:development'],
             productionTarget1: ['copy', 'newer:imagemin', 'sass', 'uglify:production'],
-            target2: ['autoprefixer', 'notify:done'],
+            target2: ['autoprefixer', 'notify:done']
         }
     });
 
@@ -167,6 +173,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-concurrent');
 
     grunt.registerTask('default', ['concurrent:developmentTarget1', 'concurrent:target2', 'watch']);
     grunt.registerTask('clean', ['shell:clean']);
