@@ -1,6 +1,8 @@
 @charset 'UTF-8';
 
 @import 'CSS:../lib/normalize.css/normalize.css';
+
 @import 'modules/variables';
+@import 'modules/mixins';
 @import 'components/base';
 @import 'layouts/wrappers';
