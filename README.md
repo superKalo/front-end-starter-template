@@ -53,3 +53,40 @@ npm install
 ##.sublime-project Configuration File:
 >Projects in Sublime Text are made up of two files: the sublime-project file, which contains the project definition, and the sublime-workspace file, which contains user specific data, such as the open files and the modifications to each.
 As a general rule, the sublime-project file would be checked into version control, while the sublime-workspace file would not. https://www.sublimetext.com/docs/3/projects.html
+
+##HTML Meta Tags
+###Responsive Meta Tag
+```html
+<!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<![endif]-->
+```
+
+This means that the browser will (probably) render the width of the page at the width of its own screen. So if that screen is 320px wide, the browser window will be 320px wide, rather than way zoomed out and showing 960px (or whatever that device does by default, in lieu of a responsive meta tag) http://css-tricks.com/snippets/html/responsive-meta-tag/
+
+###HTML5 Shiv
+```html
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+```
+
+The HTML5 Shiv enables use of HTML5 sectioning elements in legacy Internet Explorer and provides basic HTML5 styling for Internet Explorer 6-9, Safari 4.x (and iPhone 3.x), and Firefox 3.x. https://github.com/aFarkas/html5shiv
+
+###HTML5 Shiv
+```html
+<!--[if lt IE 9]>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+```
+
+css3-mediaqueries.js is a JavaScript library to make IE 5+, Firefox 1+ and Safari 2 transparently parse, test and apply CSS3 Media Queries. Firefox 3.5+, Opera 7+, Safari 3+ and Chrome already offer native support https://code.google.com/p/css3-mediaqueries-js/
+
+###X-UA-Compatible Meta Tag
+```html
+<!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<![endif]-->
+```
+
+The X-UA-Compatible meta tag allows web authors to choose what version of Internet Explorer the page should be rendered as. IE11+ have changes to these modes. The version that will be released after IE 11, will only honor X-UA-Compatible meta tag in certain circumstances http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e
