@@ -1,6 +1,6 @@
 #Hello DevLabs!
 
-Нека да вдигнем нивото на нашия Front-end код и workflow, заедно. :)
+Нека да вдигнем нивото на нашия Front-end код и workflow, заедно :)
 
 <img src="https://avatars0.githubusercontent.com/u/10864739?v=3&s=200" alt="DevLabs" width="100" />
 
