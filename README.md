@@ -29,17 +29,17 @@ http://gruntjs.com/getting-started
 
 - **package.json** This file is used by npm to store metadata for projects published as npm modules. You will list grunt and the Grunt plugins your project needs as devDependencies in this file.
 - **Gruntfile.js**: used to configure or define tasks and load Grunt plugins.
-- Run this command in the project directory to install all project dependencies with npm:
+- Check if all the versions of the dependencies in package.json are up-to-date, install [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) and run:
 ```shell
-npm install
-```
-- Check if all modules are up-to-date:
-```shell
-npm outdated
+Upgrade a project's package.json:
 ```
 - Update all modules:
 ```shell
-npm update
+npm-check-updates -u
+```
+- Run this command in the project directory to install all project dependencies with npm:
+```shell
+npm install
 ```
 
 ###Grunt Plugins:
