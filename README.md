@@ -33,6 +33,14 @@ http://gruntjs.com/getting-started
 ```shell
 npm install
 ```
+- Check if all modules are up-to-date:
+```shell
+npm outdated
+```
+- Update all modules:
+```shell
+npm update
+```
 
 ###Grunt Plugins:
 - Compile SASS/SCSS to CSS: https://github.com/gruntjs/grunt-contrib-sass
