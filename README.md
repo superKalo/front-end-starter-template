@@ -31,9 +31,9 @@ http://gruntjs.com/getting-started
 - **Gruntfile.js**: used to configure or define tasks and load Grunt plugins.
 - Check if all the versions of the dependencies in package.json are up-to-date, install [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) and run:
 ```shell
-Upgrade a project's package.json:
+npm-check-updates
 ```
-- Update all modules:
+- Upgrade a project's package.json:
 ```shell
 npm-check-updates -u
 ```
