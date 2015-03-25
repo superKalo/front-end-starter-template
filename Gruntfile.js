@@ -157,18 +157,6 @@ module.exports = function(grunt) {
                 tasks: ['uglify:development', 'notify:scripts']
             }
         },
-        preprocess: {
-            options: {
-                context: {
-                    DEBUG: true
-                }
-            },
-            multifile: {
-                files: {
-                    'index.html': '_build/index.html'
-                }
-            }
-        },
         concurrent: {
             developmentTarget1: ['copy', 'newer:imagemin', 'sass', 'uglify:development'],
             productionTarget1: ['copy', 'newer:imagemin', 'sass', 'uglify:production'],
@@ -186,7 +174,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-concurrent');
-    grunt.loadNpmTasks('grunt-preprocess');
 
     grunt.registerTask('default', ['concurrent:developmentTarget1', 'concurrent:target2', 'watch']);
     grunt.registerTask('clean', ['shell:clean']);

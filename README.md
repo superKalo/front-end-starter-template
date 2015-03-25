@@ -58,7 +58,7 @@ npm install
   - SublimeLinter plugin for JavaScript, using jshint: https://github.com/SublimeLinter/SublimeLinter-jshint (**configuration file: js/.jsintrc**)
   - SublimeLinter plugin for Sass scss syntax, using scss-lint: https://github.com/attenzione/SublimeLinter-scss-lint (**configuration file: styles/.scss-lint.yml**)
 
-##.sublime-project Configuration File:
+##.sublime-project Configuration File
 >Projects in Sublime Text are made up of two files: the sublime-project file, which contains the project definition, and the sublime-workspace file, which contains user specific data, such as the open files and the modifications to each.
 As a general rule, the sublime-project file would be checked into version control, while the sublime-workspace file would not. https://www.sublimetext.com/docs/3/projects.html
 
