@@ -37,7 +37,7 @@ module.exports = function(grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    '_build/css/style.css': 'styles/style.scss'
+                    '_build/css/style.css': 'sass/style.scss'
                 }
             }
         },
@@ -141,7 +141,7 @@ module.exports = function(grunt) {
         },
         watch: {
             styles: {
-                files: ['styles/**/*.scss'],
+                files: ['sass/**/*.scss'],
                 tasks: ['sass', 'autoprefixer', 'notify:styles']
             },
             html: {
@@ -155,6 +155,18 @@ module.exports = function(grunt) {
             scripts: {
                 files: ['js/**/*.js'],
                 tasks: ['uglify:development', 'notify:scripts']
+            }
+        },
+        preprocess: {
+            options: {
+                context: {
+                    DEBUG: true
+                }
+            },
+            multifile: {
+                files: {
+                    'index.html': '_build/index.html'
+                }
             }
         },
         concurrent: {
@@ -174,6 +186,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-concurrent');
+    grunt.loadNpmTasks('grunt-preprocess');
 
     grunt.registerTask('default', ['concurrent:developmentTarget1', 'concurrent:target2', 'watch']);
     grunt.registerTask('clean', ['shell:clean']);

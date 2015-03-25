@@ -66,7 +66,7 @@ As a general rule, the sublime-project file would be checked into version contro
 ###Responsive Meta Tag
 ```html
 <!--[if IE]>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 <![endif]-->
 ```
 
