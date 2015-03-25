@@ -4,7 +4,7 @@
 
 <img src="https://avatars0.githubusercontent.com/u/10864739?v=3&s=200" alt="DevLabs" width="100" />
 
-## Sticky Footer Fix:
+## Sticky Footer Fix
 >Footers on web pages are a great place to chuck copyright information, contact links, and quick navigational stuff. Visitors are trained to look to the bottom of pages to find these types of things, so why not help them out? One problem is that on pages that are a bit vertically challenged, the footer might end up in the middle of the page instead of down at the bottom of the browser window where it should be.
 More info: https://css-tricks.com/snippets/css/sticky-footer/
 
@@ -47,7 +47,7 @@ npm install
 ```
 
 ### Grunt Plugins:
-- Compile SASS/SCSS to CSS: https://github.com/gruntjs/grunt-contrib-sass
+- Compile SASS/SCSS to CSS: https://github.com/sindresorhus/grunt-sass
 - Parse CSS and add vendor-prefixed CSS properties using the Can I Use database: https://github.com/nDmitry/grunt-autoprefixer
 - Minify your images: https://github.com/gruntjs/grunt-contrib-imagemin
 - Copy files and folders into the _build folder: https://github.com/gruntjs/grunt-contrib-copy
@@ -56,6 +56,7 @@ npm install
 - Run tasks whenever watched files change: https://github.com/gruntjs/grunt-contrib-watch
 - Run shell commands as s Grunt task: https://github.com/sindresorhus/grunt-shell
 - Run grunt tasks concurrently to decrease build time: https://github.com/sindresorhus/grunt-concurrent
+- Automatic Notifications when a Grunt task finishes: https://github.com/dylang/grunt-notify
 
 ## Sublime Linters:
 - SublimeLinter is a plugin for Sublime Text 3 that provides a framework for linting code. Whatever language you code in, SublimeLinter can help you write cleaner, better, more bug-free code. http://sublimelinter.readthedocs.org/en/latest/

@@ -30,14 +30,12 @@ module.exports = function(grunt) {
         },
         sass: {
             options: {
-                sourcemap: 'inline'
+                sourceMap: true,
+                outputStyle: 'compressed'
             },
             dist: {
-                options: {
-                    style: 'compressed'
-                },
                 files: {
-                    '_build/css/style.css': 'sass/style.scss'
+                    '_build/css/style.min.css': 'sass/style.scss'
                 }
             }
         },
@@ -165,7 +163,7 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
