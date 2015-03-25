@@ -45,7 +45,7 @@ module.exports = function(grunt) {
                 map: true
             },
             no_dest: {
-                src: '_build/css/style.css'
+                src: '_build/css/style.min.css'
             }
         },
         imagemin: {
