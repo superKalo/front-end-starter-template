@@ -64,15 +64,13 @@ As a general rule, the sublime-project file would be checked into version contro
 
 ##HTML Meta Tags
 ###Responsive Meta Tag
-Note: don't use a responsive meta tag if your website isn't specifically designed to be responsive and work well at that size, as it will make the experience worse. https://css-tricks.com/snippets/html/responsive-meta-tag/
-
 ```html
 <!--[if IE]>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 <![endif]-->
 ```
 
-This means that the browser will (probably) render the width of the page at the width of its own screen. So if that screen is 320px wide, the browser window will be 320px wide, rather than way zoomed out and showing 960px (or whatever that device does by default, in lieu of a responsive meta tag) http://css-tricks.com/snippets/html/responsive-meta-tag/
+Note: don't use a responsive meta tag if your website isn't specifically designed to be responsive and work well at that size, as it will make the experience worse. https://css-tricks.com/snippets/html/responsive-meta-tag/
 
 ###HTML5 Shiv
 ```html
