@@ -70,9 +70,7 @@ As a general rule, the sublime-project file would be checked into version contro
 ## HTML Meta Tags
 ### Responsive Meta Tag
 ```html
-<!--[if IE]>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 ```
 
 Note: don't use a responsive meta tag if your website isn't specifically designed to be responsive and work well at that size, as it will make the experience worse. https://css-tricks.com/snippets/html/responsive-meta-tag/
