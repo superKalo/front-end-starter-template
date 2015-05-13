@@ -13,18 +13,9 @@ module.exports = function(grunt) {
             }
         },
         uglify: {
-            development: {
-                options: {
-                    beautify: true,
-                    mangle: false
-                },
-                files: {
-                    '_build/js/script.min.js': ['lib/jquery/dist/jquery.js', 'js/script.js']
-                }
-            },
             production: {
                 files: {
-                    '_build/js/script.min.js': ['lib/jquery/dist/jquery.min.js', 'js/script.js']
+                    '_build/js/script.min.js': ['js/script.js']
                 }
             }
         },
@@ -57,7 +48,7 @@ module.exports = function(grunt) {
                 {
                         expand: true,
                         cwd: 'img',
-                        src: ['**/*.png', 'favicons/*.ico', 'favicons/*.xml'],
+                        src: ['**/*.png'],
                         dest: '_build/img/',
                         ext: '.png'
                     }
@@ -98,6 +89,20 @@ module.exports = function(grunt) {
                         ext: '.gif'
                     }
                 ]
+            }
+        },
+        processhtml: {
+            dist: {
+              options: {
+                  process: true,
+              },
+              files: [{
+                  expand: true,
+                  cwd: '_build',
+                  src: ['**/*.html'],
+                  dest: '_build',
+                  ext: '.html'
+              }]
             }
         },
         notify: {
@@ -149,10 +154,6 @@ module.exports = function(grunt) {
             images: {
                 files: ['img/**/*.{png,jpg,gif,svg}'],
                 tasks: ['newer:imagemin', 'notify:images']
-            },
-            scripts: {
-                files: ['js/**/*.js'],
-                tasks: ['uglify:development', 'notify:scripts']
             }
         },
         concurrent: {
@@ -169,8 +170,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-processhtml');
 
-    grunt.registerTask('default', ['copy', 'newer:imagemin', 'sass', 'uglify:development', 'autoprefixer', 'notify:done', 'watch']);
+    grunt.registerTask('default', ['copy', 'newer:imagemin', 'sass', 'notify:done', 'watch']);
     grunt.registerTask('clean', ['shell:clean']);
-    grunt.registerTask('production', ['copy', 'newer:imagemin', 'sass', 'uglify:production', 'autoprefixer', 'notify:done']);
+    grunt.registerTask('production', ['copy', 'processhtml', 'newer:imagemin', 'sass', 'autoprefixer', 'uglify', 'notify:done']);
 };
