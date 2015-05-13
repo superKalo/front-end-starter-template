@@ -145,7 +145,7 @@ module.exports = function(grunt) {
         watch: {
             styles: {
                 files: ['sass/**/*.scss'],
-                tasks: ['sass', 'autoprefixer', 'notify:styles']
+                tasks: ['sass', 'notify:styles']
             },
             html: {
                 files: ['*.html'],
