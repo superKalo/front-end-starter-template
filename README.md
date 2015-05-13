@@ -53,9 +53,9 @@ npm install
 - Copy files and folders into the _build folder: https://github.com/gruntjs/grunt-contrib-copy
 - Minify your JS: https://github.com/gruntjs/grunt-contrib-uglify
 - Configure Grunt tasks to run with newer files only: https://github.com/tschaub/grunt-newer
+- Process html files at build time to modify them depending on the release environment- https://github.com/dciccale/grunt-processhtml
 - Run tasks whenever watched files change: https://github.com/gruntjs/grunt-contrib-watch
 - Run shell commands as s Grunt task: https://github.com/sindresorhus/grunt-shell
-- Run grunt tasks concurrently to decrease build time: https://github.com/sindresorhus/grunt-concurrent
 - Automatic Notifications when a Grunt task finishes: https://github.com/dylang/grunt-notify
 
 ## Sublime Linters:
@@ -95,9 +95,7 @@ css3-mediaqueries.js is a JavaScript library to make IE 5+, Firefox 1+ and Safar
 
 ### X-UA-Compatible Meta Tag
 ```html
-<!--[if IE]>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<![endif]-->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 ```
 
 The X-UA-Compatible meta tag allows web authors to choose what version of Internet Explorer the page should be rendered as. IE11+ have changes to these modes. The version that will be released after IE 11, will only honor X-UA-Compatible meta tag in certain circumstances http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e
