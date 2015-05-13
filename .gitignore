@@ -1,5 +1,15 @@
-node_modules
-.sass-cache
-_build
+#OSX files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+node_modules/
+.sass-cache/
+_build/
+lib/
+
 front-end-starter-template.sublime-workspace
-lib
