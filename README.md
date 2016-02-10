@@ -8,14 +8,6 @@
 >Footers on web pages are a great place to chuck copyright information, contact links, and quick navigational stuff. Visitors are trained to look to the bottom of pages to find these types of things, so why not help them out? One problem is that on pages that are a bit vertically challenged, the footer might end up in the middle of the page instead of down at the bottom of the browser window where it should be.
 More info: https://css-tricks.com/snippets/css/sticky-footer/
 
-## NodeJS
->Node.js® is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices. http://nodejs.org
-
-All the productivity plugins we use run on top of NodeJS :)
-
-### NPM
->npm is a package manager for JavaScript, and is the default for Node.js. As of Node.js version 0.6.3, npm is bundled and installed automatically with the environment. npm runs through the command line and manages dependencies for an application.
-
 ## Bower
 >Web sites are made of lots of things — frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you. http://bower.io/#install-bower
 
@@ -26,37 +18,6 @@ Run this command in the project directory to install all libraries listed in bow
 ```shell
 bower install
 ```
-
-## Grunt
->In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it through a Gruntfile, a task runner can do most of that mundane work for you—and your team—with basically zero effort.
-http://gruntjs.com/getting-started
-
-- **package.json** This file is used by npm to store metadata for projects published as npm modules. You will list grunt and the Grunt plugins your project needs as devDependencies in this file.
-- **Gruntfile.js**: used to configure or define tasks and load Grunt plugins.
-- Check if all the versions of the dependencies in package.json are up-to-date, install [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) and run:
-```shell
-npm-check-updates
-```
-- Upgrade a project's package.json:
-```shell
-npm-check-updates -u
-```
-- Run this command in the project directory to install all project dependencies with npm:
-```shell
-npm install
-```
-
-### Grunt Plugins:
-- Compile SASS/SCSS to CSS: https://github.com/sindresorhus/grunt-sass
-- Parse CSS and add vendor-prefixed CSS properties using the Can I Use database: https://github.com/nDmitry/grunt-autoprefixer
-- Minify your images: https://github.com/gruntjs/grunt-contrib-imagemin
-- Copy files and folders into the _build folder: https://github.com/gruntjs/grunt-contrib-copy
-- Minify your JS: https://github.com/gruntjs/grunt-contrib-uglify
-- Configure Grunt tasks to run with newer files only: https://github.com/tschaub/grunt-newer
-- Process html files at build time to modify them depending on the release environment- https://github.com/dciccale/grunt-processhtml
-- Run tasks whenever watched files change: https://github.com/gruntjs/grunt-contrib-watch
-- Run shell commands as s Grunt task: https://github.com/sindresorhus/grunt-shell
-- Automatic Notifications when a Grunt task finishes: https://github.com/dylang/grunt-notify
 
 ## Sublime Linters:
 - SublimeLinter is a plugin for Sublime Text 3 that provides a framework for linting code. Whatever language you code in, SublimeLinter can help you write cleaner, better, more bug-free code. http://sublimelinter.readthedocs.org/en/latest/
