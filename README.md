@@ -1,8 +1,6 @@
-# Hello DevLabs!
+# My front-end basic starter template
 
-Нека да вдигнем нивото на нашия Front-end код и workflow, заедно :)
-
-<img src="https://avatars0.githubusercontent.com/u/10864739?v=3&s=200" alt="DevLabs" width="100" />
+This is a very rough starter template I use for a ground point. Fits well to my flow. If you are searching for a complete front-end starter template, please consider [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate)
 
 ## Sticky Footer Fix
 >Footers on web pages are a great place to chuck copyright information, contact links, and quick navigational stuff. Visitors are trained to look to the bottom of pages to find these types of things, so why not help them out? One problem is that on pages that are a bit vertically challenged, the footer might end up in the middle of the page instead of down at the bottom of the browser window where it should be.
