@@ -1,5 +1,3 @@
-$(function(){
-
-    //TODO: Get shit done.
-
-});
+/**
+ * TODO: Get shit done.
+ */
